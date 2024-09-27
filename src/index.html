@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-white shadow-md fixed z-[9999] w-full">
+      <div class="px-8 flex justify-between items-center gap-4">
+        <!-- Logo -->
+        <div class="flex items-center w-40">
+          <img src="./images/logo-new.png" alt="ITinc" />
+        </div>
+        <!-- Navigation -->
+        <nav class="flex flex-1">
+          <a
+            href="#"
+            class="text-gray-700 leading-[100px] font-bold mx-2 hover:text-[#8cbc43]"
+            >Home
+          </a>
+          <a
+            href="#"
+            class="text-gray-700 leading-[100px] font-bold mx-2 hover:text-[#8cbc43]"
+            >Pages</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 leading-[100px] font-bold mx-2 hover:text-[#8cbc43]"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 leading-[100px] font-bold mx-2 hover:text-[#8cbc43]"
+            >Projects</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 leading-[100px] font-bold mx-2 hover:text-[#8cbc43]"
+            >Blog</a
+          >
+          <a
+            href="#"
+            class="text-gray-700 leading-[100px] font-bold mx-2 hover:text-[#8cbc43]"
+            >Contact Us</a
+          >
+        </nav>
+        <!-- Contact Info -->
+        <div class="flex items-center space-x-4">
+          <div class="flex pr-10 border-r border-[#eee]">
+            <div>
+              <p class="font-bold text-lg">+0 123 456 78000</p>
+              <span>Mon - Fri: 09:00 am to 6:00 pm </span>
+            </div>
+          </div>
+        </div>
+        <i class="fa-solid fa-magnifying-glass mx-4"></i>
+        <a
+          href="#"
+          class="bg-[#8cbc43] text-white py-4 px-4 rounded-lg hover:bg-blue-950"
+          >Get a Quote</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 h-[900px] pt-[100px]">
+      <div
+        class="container absolute top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4"
+      >
+        <p class="text-lg text-[#8cbc43] font-medium">For millions of users</p>
+        <h1 class="text-[90px] leading-[115px] font-bold text-white">
+          <p>
+            <span class="transparent-text-border">Powerful</span>
+            <span>Digital</span>
+          </p>
+          <p>Solutions</p>
+        </h1>
+        <div class="flex gap-4 mt-8 items-center">
+          <a
+            href="#"
+            class="inline-block bg-white text-black py-3 px-6 rounded-lg"
+            >Read More<i class="ml-2 fa-solid fa-arrow-right text-xs"></i
+          ></a>
+          <i
+            class="fa-solid fa-circle-play text-green-main text-[60px] ml-4"
+          ></i>
+          <a href="#" class="text-white underline">HOW IT WORKS</a>
+        </div>
+      </div>
+      <div class="w-full h-full">
+        <img
+          src="./images/black-man.jpg"
+          alt="Hero Image"
+          class="h-full w-full object-cover"
+        />
+      </div>
+      <div
+        class="container grid grid-cols-1 md:grid-cols-3 gap-8 absolute bottom-0 left-2/4 -translate-x-2/4 translate-y-2/4"
+      >
+        <!-- Service 1 -->
+        <div
+          class="bg-white rounded-lg p-4 border border-[#e6e6e6] border-b-4 border-b-[#8cbc43] flex gap-4"
+        >
+          <div
+            class="rounded-full bg-[#f7f9fa] w-[90px] h-[90px] flex items-center justify-center"
+          >
+            <img src="./images/icon-banner-01.png" alt="Product Engineering" />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-2xl font-semibold mb-1">Product Engineering</h2>
+            <p class="mt-2 text-gray-600">
+              Duis eleifend molestie leo at mollis sanctus intro.
+            </p>
+          </div>
+        </div>
+        <!-- Service 2 -->
+        <div
+          class="bg-white rounded-lg p-4 border border-[#e6e6e6] border-b-4 border-b-[#8cbc43] flex gap-4"
+        >
+          <div
+            class="rounded-full bg-[#f7f9fa] w-[90px] h-[90px] flex items-center justify-center"
+          >
+            <img src="./images/icon-banner-02.png" alt="Product Engineering" />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-2xl font-semibold mb-1">Business Security</h2>
+            <p class="mt-2 text-gray-600">
+              Duis eleifend molestie leo at mollis sanctus intro.
+            </p>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div
+          class="bg-white rounded-lg p-4 border border-[#e6e6e6] border-b-4 border-b-[#8cbc43] flex gap-4"
+        >
+          <div
+            class="rounded-full bg-[#f7f9fa] w-[90px] h-[90px] flex items-center justify-center"
+          >
+            <img src="./images/icon-banner-03.png" alt="Product Engineering" />
+          </div>
+          <div class="flex-1">
+            <h2 class="text-2xl font-semibold mb-1">Managed IT Services</h2>
+            <p class="mt-2 text-gray-600">
+              Duis eleifend molestie leo at mollis sanctus intro.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services section-->
+
+    <!-- Section our work-->
+    <section class="pt-32 pb-16 bg-white">
+      <div class="container mx-auto">
+        <!-- Title and description -->
+        <div class="mb-12 flex gap-4">
+          <div class="flex-1">
+            <h2 class="text-sm text-[#8cbc43] font-bold mb-4">
+              Our Work Process
+            </h2>
+            <h3 class="text-4xl font-bold mb-4">
+              How ITinc Help Your Business Grow and Successful
+            </h3>
+          </div>
+          <p class="text-gray-600 flex-1 flex items-center">
+            We help digital companies to volume their self-interest and get a
+            space Eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+
+        <!-- Work process steps -->
+        <div class="flex gap-4 mx-6 items-center">
+          <!-- Step 1 -->
+          <div class="flex flex-col gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="mb-4">
+                <i
+                  class="fa-solid fa-headphones-simple text-[50px] text-green-main"
+                ></i>
+              </div>
+              <h4 class="text-xl font-semibold">IT Design Project</h4>
+              <p class="text-gray-600 mt-2">
+                Design and propose product improvements through periodical and
+                accurate testing.
+              </p>
+            </div>
+            <!-- Step number -->
+            <div
+              class="bg-green-main text-white w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              01
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-[32px] opacity-20"></i>
+
+          <!-- Step 2 -->
+          <div class="flex flex-col gap-6">
+            <!-- Step number -->
+            <div
+              class="bg-green-main text-white w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              02
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="mb-4">
+                <i
+                  class="fa-solid fa-headphones-simple text-[50px] text-green-main"
+                ></i>
+              </div>
+              <h4 class="text-xl font-semibold">Product Engineer</h4>
+              <p class="text-gray-600 mt-2">
+                Develop and propose product improvements through periodical and
+                accurate testing.
+              </p>
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-[32px] opacity-20"></i>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col gap-6">
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="mb-4">
+                <i
+                  class="fa-solid fa-headphones-simple text-[50px] text-green-main"
+                ></i>
+              </div>
+              <h4 class="text-xl font-semibold">Cloud Integration</h4>
+              <p class="text-gray-600 mt-2">
+                Cloud Integrate for product improvements through periodical and
+                accurate testing.
+              </p>
+            </div>
+            <!-- Step number -->
+            <div
+              class="bg-green-main text-white w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              03
+            </div>
+          </div>
+
+          <i class="fa-solid fa-chevron-right text-[32px] opacity-20"></i>
+
+          <!-- Step 4 -->
+          <div class="flex flex-col gap-6">
+            <!-- Step number -->
+            <div
+              class="bg-green-main text-white w-10 h-10 rounded-full flex items-center justify-center"
+            >
+              04
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-6">
+              <div class="mb-4">
+                <i
+                  class="fa-solid fa-headphones-simple text-[50px] text-green-main"
+                ></i>
+              </div>
+              <h4 class="text-xl font-semibold">IT Consultancy</h4>
+              <p class="text-gray-600 mt-2">
+                IT Consultancy for product improvements through periodical and
+                accurate testing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div
+        #swiperRef=""
+        class="background-footer !flex bg-repeat bg-center bg-cover swiper"
+      >
+        <div class="flex-1 pt-32 pb-24 pl-24">
+          <h2 class="text-sm text-[#8cbc43] font-bold mb-4">
+            Our Work Process
+          </h2>
+          <h3 class="text-4xl text-white font-bold mb-4">
+            We provide best solutions for Preparing your success
+          </h3>
+          <p class="text-white mb-6">
+            We help digital companies to volume their self-interest and get a
+            space. Eaque ipsa quae ab illo inventore veritatis et quasi.
+          </p>
+          <div class="flex text-[55px] gap-4 text-white">
+            <i class="fa-regular fa-circle-left button-prev-service"></i>
+            <i class="fa-regular fa-circle-right button-next-service"></i>
+          </div>
+        </div>
+        <div class="flex-[3] relative pl-8 overflow-hidden">
+          <div
+            class="absolute top-0 h-full left-44 right-0 bg-green-main"
+          ></div>
+          <div class="w-full">
+            <div #swiperRef="" class="swiper mySwiper">
+              <div class="pt-24 relative z-10 swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="pt-10 relative">
+                    <div class="w-full aspect-square">
+                      <img
+                        src="./images/black-man.jpg"
+                        class="rounded-lg object-cover w-full h-full"
+                      />
+                    </div>
+                    <div
+                      class="absolute w-16 h-16 rounded-full bg-white top-2 left-8 flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-chalkboard text-4xl text-green-main"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pt-10 relative">
+                    <div class="w-full aspect-square">
+                      <img
+                        src="./images/black-man.jpg"
+                        class="rounded-lg object-cover w-full h-full"
+                      />
+                    </div>
+                    <div
+                      class="absolute w-16 h-16 rounded-full bg-white top-2 left-8 flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-chalkboard text-4xl text-green-main"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pt-10 relative">
+                    <div class="w-full aspect-square">
+                      <img
+                        src="./images/black-man.jpg"
+                        class="rounded-lg object-cover w-full h-full"
+                      />
+                    </div>
+                    <div
+                      class="absolute w-16 h-16 rounded-full bg-white top-2 left-8 flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-chalkboard text-4xl text-green-main"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pt-10 relative">
+                    <div class="w-full aspect-square">
+                      <img
+                        src="./images/black-man.jpg"
+                        class="rounded-lg object-cover w-full h-full"
+                      />
+                    </div>
+                    <div
+                      class="absolute w-16 h-16 rounded-full bg-white top-2 left-8 flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-chalkboard text-4xl text-green-main"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="pt-10 relative">
+                    <div class="w-full aspect-square">
+                      <img
+                        src="./images/black-man.jpg"
+                        class="rounded-lg object-cover w-full h-full"
+                      />
+                    </div>
+                    <div
+                      class="absolute w-16 h-16 rounded-full bg-white top-2 left-8 flex justify-center items-center"
+                    >
+                      <i
+                        class="fa-solid fa-chalkboard text-4xl text-green-main"
+                      ></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-32 pb-16 bg-white">
+      <div #swiperRef="" class="container mx-auto swiper">
+        <div class="mb-12 text-center">
+          <h2 class="text-sm text-[#8cbc43] font-bold mb-4">
+            Numbers Are Talking
+          </h2>
+          <h3 class="text-4xl font-bold mb-4">
+            Let’s talk about our business growth in <br />
+            IT consulting solution
+          </h3>
+        </div>
+        <div class="flex items-center">
+          <div class="flex-1 text-center">
+            <p class="text-[180px] font-bold relative">
+              35
+              <span class="absolute text-green-main text-8xl">+</span>
+            </p>
+            <p class="text-sm font-bold text-[#666666]">
+              Learn more about our Success Stories
+            </p>
+          </div>
+          <div class="flex flex-1 items-center">
+            <div class="flex-1">
+              <div class="flex items-center mb-16">
+                <i class="fa-solid fa-laptop text-green-main text-7xl"></i>
+                <div class="ml-4">
+                  <p class="text-4xl font-bold relative">
+                    8792
+                    <span class="absolute text-3xl">+</span>
+                  </p>
+                  <p class="text-sm font-bold text-[#666666]">
+                    Delivered Goods
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-laptop text-green-main text-7xl"></i>
+                <div class="ml-4">
+                  <p class="text-4xl font-bold relative">
+                    8792
+                    <span class="absolute text-3xl">+</span>
+                  </p>
+                  <p class="text-sm font-bold text-[#666666]">
+                    Delivered Goods
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1">
+              <div class="flex items-center mb-16">
+                <i class="fa-solid fa-laptop text-green-main text-7xl"></i>
+                <div class="ml-4">
+                  <p class="text-4xl font-bold relative">
+                    8792
+                    <span class="absolute text-3xl">+</span>
+                  </p>
+                  <p class="text-sm font-bold text-[#666666]">
+                    Delivered Goods
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <i class="fa-solid fa-laptop text-green-main text-7xl"></i>
+                <div class="ml-4">
+                  <p class="text-4xl font-bold relative">
+                    8792
+                    <span class="absolute text-3xl">+</span>
+                  </p>
+                  <p class="text-sm font-bold text-[#666666]">
+                    Delivered Goods
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-96 mt-8 relative overflow-hidden">
+          <img
+            src="./images/black-man.jpg"
+            alt=""
+            class="w-full h-full object-cover rounded-lg"
+          />
+          <div
+            class="absolute w-[520px] h-[520px] -right-32 top-6 flex justify-center items-center"
+          >
+            <div
+              class="bg-black rounded-full absolute w-full h-full opacity-20 z-10"
+            ></div>
+            <div
+              class="w-[460px] h-[460px] bg-green-main rounded-full z-20 absolute top-2/4 left-2/4 -translate-x-1/2 -translate-y-1/2"
+            ></div>
+            <div class="w-[250px] text-white z-30 text-right">
+              <p class="text-xl font-bold text-left mb-8">
+                AGENCY EXCITED WITH OUR SOLUTIONS
+              </p>
+              <a href="#" class="underline">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-16 flex">
+          <div class="flex-1 justify-center flex">
+            <img src="./images/client.png" alt="" class="w-32" />
+          </div>
+          <div class="flex-1 justify-center flex">
+            <img src="./images/client.png" alt="" class="w-32" />
+          </div>
+          <div class="flex-1 justify-center flex">
+            <img src="./images/client.png" alt="" class="w-32" />
+          </div>
+          <div class="flex-1 justify-center flex">
+            <img src="./images/client.png" alt="" class="w-32" />
+          </div>
+          <div class="flex-1 justify-center flex">
+            <img src="./images/client.png" alt="" class="w-32" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative mt-60">
+      <div
+        class="container mx-auto bg-white rounded-2xl py-8 px-16 shadow absolute z-10 -translate-y-1/2 left-2/4 -translate-x-1/2"
+      >
+        <div class="mb-12 flex gap-4">
+          <div class="flex-1">
+            <h2 class="text-sm text-[#8cbc43] font-bold mb-4">
+              Our Client's Review
+            </h2>
+            <h3 class="text-4xl font-bold mb-4">What Client's say about us</h3>
+          </div>
+          <div class="text-right text-[#666666] text-[55px]">
+            <i class="fa-regular fa-circle-left button-prev-service-says"></i>
+            <i class="fa-regular fa-circle-right button-next-service-says"></i>
+          </div>
+        </div>
+        <div class="w-full">
+          <div #swiperRef="" class="swiper mySwiperSays">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="flex pt-6 pl-6">
+                  <div class="w-44">
+                    <div class="w-32 h-32 relative">
+                      <img
+                        src="./images/black-man.jpg"
+                        alt=""
+                        class="w-full h-full rounded-md object-cover z-20 relative"
+                      />
+                      <div
+                        class="absolute w-full h-full rounded-md bg-green-main z-10 top-2 left-2"
+                      ></div>
+                      <div
+                        class="absolute w-12 h-12 rounded-full bg-white shadow flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-30"
+                      >
+                        <i class="fa-solid fa-quote-left text-xl"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <p
+                      class="text-[#666666] italic pb-6 border-b border-[#666666]"
+                    >
+                      I found ITinc Solutions Private Ltd to be professional,
+                      efficient, and very responsive as we went through the
+                      process of modifying my website. I plan on using them
+                      again and would recommend them.
+                    </p>
+                    <div class="pt-6 flex justify-between">
+                      <div>
+                        <p class="text-lg font-bold">Elena Rusconi</p>
+                        <span class="text-sm text-green-main">Adviser</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex pt-6 pl-6">
+                  <div class="w-44">
+                    <div class="w-32 h-32 relative">
+                      <img
+                        src="./images/black-man.jpg"
+                        alt=""
+                        class="w-full h-full rounded-md object-cover z-20 relative"
+                      />
+                      <div
+                        class="absolute w-full h-full rounded-md bg-green-main z-10 top-2 left-2"
+                      ></div>
+                      <div
+                        class="absolute w-12 h-12 rounded-full bg-white shadow flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-30"
+                      >
+                        <i class="fa-solid fa-quote-left text-xl"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <p
+                      class="text-[#666666] italic pb-6 border-b border-[#666666]"
+                    >
+                      I found ITinc Solutions Private Ltd to be professional,
+                      efficient, and very responsive as we went through the
+                      process of modifying my website. I plan on using them
+                      again and would recommend them.
+                    </p>
+                    <div class="pt-6 flex justify-between">
+                      <div>
+                        <p class="text-lg font-bold">Elena Rusconi</p>
+                        <span class="text-sm text-green-main">Adviser</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex pt-6 pl-6">
+                  <div class="w-44">
+                    <div class="w-32 h-32 relative">
+                      <img
+                        src="./images/black-man.jpg"
+                        alt=""
+                        class="w-full h-full rounded-md object-cover z-20 relative"
+                      />
+                      <div
+                        class="absolute w-full h-full rounded-md bg-green-main z-10 top-2 left-2"
+                      ></div>
+                      <div
+                        class="absolute w-12 h-12 rounded-full bg-white shadow flex justify-center items-center top-0 left-0 -translate-x-1/2 -translate-y-1/2 z-30"
+                      >
+                        <i class="fa-solid fa-quote-left text-xl"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex-1">
+                    <p
+                      class="text-[#666666] italic pb-6 border-b border-[#666666]"
+                    >
+                      I found ITinc Solutions Private Ltd to be professional,
+                      efficient, and very responsive as we went through the
+                      process of modifying my website. I plan on using them
+                      again and would recommend them.
+                    </p>
+                    <div class="pt-6 flex justify-between">
+                      <div>
+                        <p class="text-lg font-bold">Elena Rusconi</p>
+                        <span class="text-sm text-green-main">Adviser</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                        <i class="fa-solid fa-star text-green-main text-sm"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="background-technology bg-no-repeat bg-center bg-cover">
+      <div class="pt-80 pb-20 container mx-auto relative">
+        <div class="mb-12 text-center">
+          <h2 class="text-sm text-[#8cbc43] font-bold mb-4">
+            Technology Index
+          </h2>
+          <h3 class="text-4xl font-bold mb-4 text-white">
+            Improved and Innovative
+          </h3>
+          <p
+            class="text-white opacity-80 flex-1 flex items-center max-w-[800px] mx-auto"
+          >
+            We help digital companies to volume their self-interest and get a
+            space Eaque ipsa quae ab illo inventore veritatis et quasi
+            architecto beatae vitae dicta sunt explicabo.
+          </p>
+        </div>
+        <div class="flex justify-evenly text-white">
+          <div class="w-28 flex flex-col items-center">
+            <div
+              class="w-full h-28 bg-transparent rounded-md border border-[#666666] flex justify-center items-center mb-6 border-opacity-40"
+            >
+              <i class="fa-solid fa-industry text-green-main text-5xl"></i>
+            </div>
+            <i class="fa-solid fa-circle text-green-main mb-4"></i>
+            <p class="font-bold text-lg uppercase text-center">
+              Marketing Strategy
+            </p>
+          </div>
+          <div class="w-28 flex flex-col items-center">
+            <div
+              class="w-full h-28 bg-transparent rounded-md border border-[#666666] flex justify-center items-center mb-6 border-opacity-40"
+            >
+              <i class="fa-solid fa-industry text-green-main text-5xl"></i>
+            </div>
+            <i class="fa-solid fa-circle text-green-main mb-4"></i>
+            <p class="font-bold text-lg uppercase text-center">
+              Marketing Strategy
+            </p>
+          </div>
+          <div class="w-28 flex flex-col items-center">
+            <div
+              class="w-full h-28 bg-transparent rounded-md border border-[#666666] flex justify-center items-center mb-6 border-opacity-40"
+            >
+              <i class="fa-solid fa-industry text-green-main text-5xl"></i>
+            </div>
+            <i class="fa-solid fa-circle text-green-main mb-4"></i>
+            <p class="font-bold text-lg uppercase text-center">
+              Marketing Strategy
+            </p>
+          </div>
+          <div class="w-28 flex flex-col items-center">
+            <div
+              class="w-full h-28 bg-transparent rounded-md border border-[#666666] flex justify-center items-center mb-6 border-opacity-40"
+            >
+              <i class="fa-solid fa-industry text-green-main text-5xl"></i>
+            </div>
+            <i class="fa-solid fa-circle text-green-main mb-4"></i>
+            <p class="font-bold text-lg uppercase text-center">
+              Marketing Strategy
+            </p>
+          </div>
+          <div class="w-28 flex flex-col items-center">
+            <div
+              class="w-full h-28 bg-transparent rounded-md border border-[#666666] flex justify-center items-center mb-6 border-opacity-40"
+            >
+              <i class="fa-solid fa-industry text-green-main text-5xl"></i>
+            </div>
+            <i class="fa-solid fa-circle text-green-main mb-4"></i>
+            <p class="font-bold text-lg uppercase text-center">
+              Marketing Strategy
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer section-->
+    <footer class="text-white background-footer relative mt-60">
+      <div class="absolute w-full -translate-y-2/4">
+        <div
+          class="container mx-auto px-4 flex justify-between items-center bg-[#8cbc43] rounded-lg"
+        >
+          <div class="flex">
+            <div class="flex items-center py-8 border-r border-white px-4">
+              <i class="fas fa-envelope mr-2"></i>
+              <a href="mailto:mail@itinc.com" class="text-white"
+                >mail@itinc.com</a
+              >
+            </div>
+            <div class="flex items-center py-8 border-r border-white px-4">
+              <i class="fas fa-phone mr-2"></i>
+              <a href="tel:+0088866688" class="text-white">(+00)888.666.88</a>
+            </div>
+            <div class="flex items-center py-8 px-4">
+              <i class="fas fa-map-marker-alt mr-2"></i>
+              <p class="text-white">456, New York 33454, NY.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <a
+              href="#"
+              class="w-11 h-11 bg-white rounded-full flex justify-center items-center"
+              ><i class="fab fa-facebook text-black"></i
+            ></a>
+            <a
+              href="#"
+              class="w-11 h-11 bg-white rounded-full flex justify-center items-center"
+              ><i class="fab fa-twitter text-black"></i
+            ></a>
+            <a
+              href="#"
+              class="w-11 h-11 bg-white rounded-full flex justify-center items-center"
+              ><i class="fab fa-linkedin text-black"></i
+            ></a>
+            <a
+              href="#"
+              class="w-11 h-11 bg-white rounded-full flex justify-center items-center"
+              ><i class="fab fa-youtube text-black"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto pb-8 px-6 flex gap-4 pt-20">
+        <!-- About Us Section -->
+        <div class="flex-1">
+          <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
+            ABOUT US
+          </h3>
+          <p>
+            We provide caring and knowledgeable technicians for making people.
+          </p>
+          <div class="bg-white text-black p-6 rounded mt-4 flex">
+            <div class="flex-1">
+              <p class="font-bold">Talk To Our Support</p>
+              <a href="tel:+10021234567" class="flex items-center"
+                >+1 002-123-4567</a
+              >
+            </div>
+            <div class="w-14 flex justify-center items-center">
+              <i
+                class="fa-solid fa-phone-volume text-[40px] text-[#8cbc43]"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- Information Section -->
+        <div class="flex-1">
+          <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
+            INFORMATION
+          </h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="hover:text-green-500">Managed IT Services</a>
+            </li>
+            <li><a href="#" class="hover:text-green-500">IT Consultancy</a></li>
+            <li>
+              <a href="#" class="hover:text-green-500">Business Solutions</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-green-500">Digital Services</a>
+            </li>
+            <li><a href="#" class="hover:text-green-500">Best Seller</a></li>
+          </ul>
+        </div>
+
+        <!-- Latest News Section -->
+        <div class="flex-1">
+          <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
+            LATEST NEWS
+          </h3>
+          <div class="grid space-y-4">
+            <a href="#" class="hover:text-green-500 flex gap-2">
+              <div class="w-20 h-20">
+                <img
+                  src="./images/black-man.jpg"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div class="flex-1">
+                <p>How to become a successful businessman</p>
+                <span class="text-green-500 text-sm">June 3, 2020</span>
+              </div>
+            </a>
+            <a href="#" class="hover:text-green-500 flex gap-2">
+              <div class="w-20 h-20">
+                <img
+                  src="./images/black-man.jpg"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+              <div class="flex-1">
+                <p>How to become a successful businessman</p>
+                <span class="text-green-500 text-sm">June 3, 2020</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="flex-1">
+          <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
+            NEWSLETTER
+          </h3>
+          <p>Sign up today for hints, tips, and the latest product news</p>
+          <form action="#" class="mt-4 flex relative">
+            <input
+              type="email"
+              placeholder="Your email address"
+              class="pl-2 pr-20 py-6 rounded-lg bg-white text-black focus:outline-none flex-1"
+            />
+            <button
+              type="submit"
+              class="px-6 py-4 bg-[#8cbc43] rounded absolute top-2/4 right-3 -translate-y-1/2"
+            >
+              <i class="fas fa-paper-plane text-white"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="container mx-auto flex justify-between items-center text-white py-6 border-t"
+      >
+        <p>Copyright © 2024 ITinc Demo 1, All Rights Reserved.</p>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white">FAQ</a>
+          <a href="#" class="hover:text-white">About Us</a>
+          <a href="#" class="hover:text-white">Contact Us</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<style>
+  .line-under-footer::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #8cbc43;
+  }
+
+  .background-footer {
+    background-image: url("./images/footer-bg.jpg");
+  }
+
+  .background-technology {
+    background-image: url("./images/project-09.jpg");
+    position: relative;
+  }
+
+  .background-technology::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .transparent-text-border {
+    color: transparent; /* Make the text color transparent */
+    -webkit-text-stroke: 2px white; /* Create the white border with 2px thickness */
+  }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3.5,
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2000,
+    },
+    navigation: {
+      nextEl: ".button-next-service",
+      prevEl: ".button-prev-service",
+    },
+  });
+
+  var swiperSays = new Swiper(".mySwiperSays", {
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 2000,
+    },
+    navigation: {
+      nextEl: ".button-next-service-says",
+      prevEl: ".button-prev-service-says",
+    },
+  });
+</script>
