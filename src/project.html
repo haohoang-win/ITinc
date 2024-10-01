@@ -208,25 +208,25 @@
         class="absolute container w-full -translate-y-2/4 left-2/4 -translate-x-1/2"
       >
         <div
-          class="container mx-auto px-4 flex justify-between items-center bg-[#8cbc43] rounded-lg"
+          class="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center bg-[#8cbc43] rounded-lg"
         >
           <div class="flex">
-            <div class="flex items-center py-8 border-r border-white px-4">
-              <i class="fas fa-envelope mr-2"></i>
+            <div class="flex items-center py-8 lg:border-r border-white px-4">
+              <i class="fas fa-envelope mr-2 text-white"></i>
               <a href="mailto:mail@itinc.com" class="text-white"
                 >mail@itinc.com</a
               >
             </div>
-            <div class="flex items-center py-8 border-r border-white px-4">
-              <i class="fas fa-phone mr-2"></i>
+            <div class="flex items-center py-8 lg:border-r border-white px-4">
+              <i class="fas fa-phone mr-2 text-white"></i>
               <a href="tel:+0088866688" class="text-white">(+00)888.666.88</a>
             </div>
             <div class="flex items-center py-8 px-4">
-              <i class="fas fa-map-marker-alt mr-2"></i>
+              <i class="fas fa-map-marker-alt mr-2 text-white"></i>
               <p class="text-white">456, New York 33454, NY.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 pb-8 lg:pb-0">
             <a
               href="#"
               class="w-11 h-11 bg-white rounded-full flex justify-center items-center"
@@ -254,9 +254,10 @@
 
     <!--Footer section-->
     <footer class="text-white background-footer relative">
-      <div class="container mx-auto pb-8 px-6 flex gap-4 pt-20">
-        <!-- About Us Section -->
-        <div class="flex-1">
+      <div
+        class="container mx-auto pb-8 px-6 flex gap-4 gap-y-8 pt-28 lg:pt-20 flex-wrap"
+      >
+        <div class="flex-[0_0_100%] md:flex-[0_0_calc(50%-1rem)] lg:flex-1">
           <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
             ABOUT US
           </h3>
@@ -278,8 +279,7 @@
           </div>
         </div>
 
-        <!-- Information Section -->
-        <div class="flex-1">
+        <div class="flex-[0_0_100%] md:flex-[0_0_calc(50%-1rem)] lg:flex-1">
           <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
             INFORMATION
           </h3>
@@ -298,8 +298,9 @@
           </ul>
         </div>
 
-        <!-- Latest News Section -->
-        <div class="flex-1">
+        <div
+          class="flex-[0_0_calc(50%-1rem)] md:flex-[0_0_calc(50%-1rem)] lg:flex-1"
+        >
           <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
             LATEST NEWS
           </h3>
@@ -331,8 +332,7 @@
           </div>
         </div>
 
-        <!-- Newsletter Section -->
-        <div class="flex-1">
+        <div class="flex-[0_0_100%] md:flex-[0_0_calc(50%-1rem)] lg:flex-1">
           <h3 class="text-xl font-bold mb-2 pb-2 line-under-footer relative">
             NEWSLETTER
           </h3>
@@ -354,7 +354,7 @@
       </div>
 
       <div
-        class="container mx-auto flex justify-between items-center text-white py-6 border-t"
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center text-white py-6 border-t"
       >
         <p>Copyright © 2024 ITinc Demo 1, All Rights Reserved.</p>
         <div class="flex space-x-6">
